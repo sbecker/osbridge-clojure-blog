@@ -9,14 +9,6 @@
 
 ;;;;;;;;; Partials
 
-(def posts [{:id 1
-             :title "First"
-             :content "Hello"}
-            {:id 2
-             :title "Second"
-             :content "Goodbye"}])
-
-
 (defpartial post-item [{:keys [id title content]}]
   [:div.post {:id id}
     [:h3
